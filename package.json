@@ -1,0 +1,17 @@
+{
+  "name": "ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clear": "rimraf ./dist",
+    "start": "npm run clear && npm run copy && tsc",
+    "copy": "copyfiles -f ./src/indexx.html ./dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "rimraf": "^3.0.2"
+  }
+}
